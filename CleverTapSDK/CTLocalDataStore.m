@@ -408,6 +408,7 @@ NSString* const kLocalCacheExpiry = @"local_cache_expiry";
                 CleverTapLogInternal(self.config.logLevel, @"%@: Failed to process profile updates: %@",self, e.debugDescription);
                 return nil;
             }
+            return nil;
         }
         else {
             return nil;
@@ -416,6 +417,7 @@ NSString* const kLocalCacheExpiry = @"local_cache_expiry";
         CleverTapLogInternal(self.config.logLevel, @"%@: Failed to process data sync from upstream: %@", self, e.debugDescription);
         return nil;
     }
+    return nil;
 }
 
 
